@@ -1,0 +1,59 @@
+.titulo{
+    text-align: center; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contain {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.colum {
+    display: flex;
+    flex: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    justify-content: center;
+    align-items: center;
+}
+
+.colum img {
+    border-radius: 20px;
+    width: 200px
+}
+
+.card{
+    background-color: #f2f2f2;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    animation: moverTarjeta 0.3s ease-in-out forwards;
+}
+
+@keyframes moverTarjeta {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(10px, -10px); 
+    }
+  }
+  
+  .card:hover {
+    animation: moverTarjetaHover 0.3s ease-in-out forwards; 
+  }
+  
+  @keyframes moverTarjetaHover {
+    from {
+      transform: translate(10px, -10px);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
+
+  
+  
